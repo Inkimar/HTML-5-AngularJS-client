@@ -3,7 +3,8 @@
 var mediaService = angular.module('myApp.services', ['ngResource']);
 
 mediaService.factory('Media', function($resource) {
-    return $resource("http://localhost:8080/Media-1-Service/resources/media", 
+//    return $resource("http://localhost:8080/Media-1-Service/resources/media", 
+    return $resource("http://localhost:8080/Thin-Media-Server/resources/media", 
     {}, {
         query: {method: 'GET', isArray: true}
     });
